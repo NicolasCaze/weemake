@@ -1,0 +1,27 @@
+---
+const { titre1, titre2, titre3, titre4, paragraphe } = Astro.props;
+
+interface Props {
+  titre1: string;
+  titre2: string;
+  titre3: string;
+  titre4: string;
+  paragraphe: string;
+}
+---
+
+<style>
+    h1 { font-size: 70px; font-family: 'EXO2'; }
+    h2 { font-size: 40px; font-family: 'EXO2'; }
+    h3 { font-size: 36px; font-family: 'Gotham'; }
+    h4 { font-size: 27px; font-family: 'EXO2'; }
+    p  { font-size: 20px; font-family: 'Gotham'; }
+  </style>
+
+
+<h1>{titre1}</h1>
+<h2>{titre2}</h2>
+<h3>{titre3}</h3>
+<h4>{titre4}</h4>
+<p>{paragraphe}</p>
+
